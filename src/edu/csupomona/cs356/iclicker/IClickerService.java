@@ -1,15 +1,20 @@
 package edu.csupomona.cs356.iclicker;
 
-public class IClickerService 
+
+public class IClickerService implements Question 
 {
 
-	public void Question()
-	{
-		System.out.println("what is 5 + 5 =");
-	}
+	private String s;
+	private String q1,q2,q3;
 	
-	public void statistics()
+	public String getQuestion() 
 	{
-		
+		return s;
 	}
+
+	public void setQuestion(String s) 
+	{
+		this.s = s;
+	}
+
 }

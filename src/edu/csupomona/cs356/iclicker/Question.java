@@ -1,8 +1,30 @@
 package edu.csupomona.cs356.iclicker;
-
-public interface Question 
+/*
+ * Sarmen Khodjasarian 
+ * Cs356
+ * 
+ * This class lets us set a question
+ * and set an answer.
+ */
+public class Question 
 {
-	public String getQuestion();
+	private String question;
+	private char answer;
 	
-	public void setQuestion(String s);
+	public String getQuestion() 
+	{
+		return question;
+	}
+	public void setQuestion(String question) 
+	{
+		this.question = question;
+	}
+	public char getAnswer() 
+	{
+		return answer;
+	}
+	public void setAnswer(char answer) 
+	{
+		this.answer = answer;
+	}	
 }
